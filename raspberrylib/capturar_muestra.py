@@ -1,12 +1,17 @@
 import os
 import sys
-from tools.stokeslib import acoplar_mueller, calcular_diatenuacion
-from tools.camaralib import digitalizar, take_mueller
-from motor_control_ssh import ejecutar_comando_ssh
+
 import time
 import numpy as np
 import cv2
 import gzip
+
+sys.path.append('../')
+from stokeslib.acoplar_mueller import acoplar_mueller
+from stokeslib.calcular_propiedades import calcular_diatenuacion
+from camaralib.digitalizar import digitalizar
+from camaralib.take_mueller import take_mueller
+from raspberrylib.ejecutar_comando_ssh import ejecutar_comando_ssh
 
 # Ruta Stokes de entrada
 IMG_LOAD_PATH = 'stokes/Sin_inv.npy.gz'    
