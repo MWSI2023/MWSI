@@ -1,10 +1,16 @@
 import sys
 import numpy as np
-from stokeslib import lu_chipman, calcular_dolp_mueller, calcular_aolp_mueller, calcular_diatenuacion, calcular_aod, power_of_depolarization, optical_activity, linear_retardance
-from camaralib import guardar_img, guardar_mueller, png2mueller, digitalizar
 import cv2
 import os
 import glob
+
+sys.path.append('../')
+from stokeslib.lu_chipman import lu_chipman
+from stokeslib.calcular_propiedades import calcular_dolp_mueller, calcular_aolp_mueller, calcular_diatenuacion, calcular_aod, power_of_depolarization, optical_activity, linear_retardance
+from camaralib.guardar_img import guardar_img
+from camaralib.guardar_mueller import guardar_mueller
+from camaralib.png2mueller import png2mueller
+from camaralib.digitalizar import digitalizar
 
 IMG_LOAD_PATH = 'C:\\Users\\roman\\Desktop\\LUCHIPMAN\\_mueller\\'
 IMG_SAVE_PATH = 'C:\\Users\\roman\\Desktop\\LUCHIPMAN\\'
