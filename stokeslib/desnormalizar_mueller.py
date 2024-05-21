@@ -1,6 +1,6 @@
 import numpy as np
-from camaralib import analogizar, digitalizar
-
+from camaralib.analogizar import analogizar
+from camaralib.digitalizar import digitalizar
 # Desnormaliza matriz de mueller M
 
 def desnormalizar(M, m00):
