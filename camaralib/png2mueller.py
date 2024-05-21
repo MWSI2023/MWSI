@@ -1,5 +1,5 @@
-import analogizar
-from tools.stokeslib import  desacoplar_mueller
+from camaralib.analogizar import analogizar
+from stokeslib.desacoplar_mueller import desacoplar_mueller
 
 def png2mueller(M_show, medida):
     
