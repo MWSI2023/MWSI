@@ -1,3 +1,4 @@
+sys.path.append('../')
 from camaralib.analogizar import analogizar
 from stokeslib.desacoplar_mueller import desacoplar_mueller
 
